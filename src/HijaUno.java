@@ -7,8 +7,10 @@ class LibroDigital extends Libro {
         this.tamanio = tamanio;
         this.disponible = disponible;
     }
+
     @Override
     public void mostrarLibro() {
+
         super.mostrarLibro();
         System.out.println("Tamanio " + tamanio);
         System.out.println("Disponibles " + cantidad);
@@ -17,7 +19,7 @@ class LibroDigital extends Libro {
 
     public void devolver() {
         if (disponible) {
-            this.disponible = true;
+             this.disponible = true;
             System.out.println("Libro digital ahora disponible");
         } else {
             System.out.println("El libro digital ya estaba disponible");

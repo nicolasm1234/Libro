@@ -18,7 +18,7 @@ class LibroImpreso extends Libro {
         System.out.println("Ejemplares DISPONIBLES para préstamo " + disponibles);
     }
 
-    public boolean prestar(int cantidad) {
+    public boolean prestar (int cantidad) {
         int disponibles = cantidad - Prestados;
 
         if (cantidad <= 0 || cantidad > disponibles) {
@@ -47,7 +47,3 @@ class LibroImpreso extends Libro {
         return true;
     }
 }
-
-
-
-
